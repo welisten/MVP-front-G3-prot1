@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../style/login_admin.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <div class="logo_container">
+            <img src="./../../assets/Logo_2.png" alt="Logotipo da EcoTerê" class="logo_img">
+        </div>
+        <div class="navbar">
+            <button class="nav_btn" id="btn_sobre" onclick="window.location = '../index.html'"" >O projeto</button>
+            <button class="nav_btn" id="btn_adm" onclick="window.location = './login_admin.html'" >Administração</button>
+        </div>
+    </nav>
+    <main>
+        <div class="bg"></div>
+        <div class="container">
+            <div class="admin_sobre">
+                <img src="./../../assets/Teresopolis.png" alt="Logotipo">
+                <p class="jargao">Conectando você a um futuro cada vez mais ecológico</p>
+                <div class="text_container">
+                    <p>A plataforma nasce com o propósito de valorizar as trilhas e o ecossistema da nossa cidade, promovendo turismo consciente e experiências seguras para todos.
+                    Por trás de cada informação atualizada, horário disponível e trilha cadastrada, existe uma equipe comprometida em garantir que o usuário tenha acesso a dados confiáveis e a uma experiência clara, acessível e organizada.</p><br>
+                    <p>O papel do administrador é essencial para manter a plataforma viva, atualizada e alinhada com a preservação ambiental e o bem-estar dos visitantes. É através dessa gestão ativa que transformamos informação em experiência, e experiência em conexão com a natureza.</p>
+                </div>
+            </div>
+            <div class="admin_login">
+                <div class="login_header">
+                    <p>É administrador ?</p>
+                    <h2> Acessar Sistema</h2>
+                </div>
+                <div class="login_body">
+                    <form action="POST">
+                        <label for="admin_email">Email:</label>
+                        <input type="email" name="admin_email" id="input_admin_email" placeholder="Ex: emailadmin@email.com">
+                        <label for="admin_senha">Senha:</label>
+                        <input type="password" name="admin_senha" id="input_admin_senha" placeholder="Digite sua senha aqui">
+                        <button class="btn" id="form_submit">Acessar</button>
+                    </form>
+                </div>
+                <div class="login_footer">
+                    <p>Esqueceu a senha ? <a href="">click aqui!</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="">Políticas de Privacidade</a>
+        <a href="">Termos de Uso</a>
+        <a href="">Políticas de Cookie</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dedede;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #015c18;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav .logo_container{
+    margin-left: 90px;
+    height: 100%;
+    img{
+        height: 100%;
+    }
+}
+
+nav .navbar{
+    height: 80%;
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar button {
+    background-color: #0fb12a;
+    padding: 8px 16px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    transition: transform .5s ease;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+nav .navbar button:hover{
+    transform: scale(1.05);
+    background-color: #58f880;
+    color: #015c18;
+    font-weight: 400;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+main section {
+    height: calc(100vh - 100px);
+
+}
+.resumo{
+    background-image: url("./../../assets/resumo_bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    position: relative;
+
+    img{
+        position: absolute;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none;     /* IE 10+ e Edge */
+        user-select: none; 
+    }
+
+    .form_1{
+        height: 600px;
+        width: 550px;
+        bottom: -60px;
+        right: 0;
+    }
+    .mulher{
+        bottom: -60px;
+        right: -40px;
+        height: 700px;
+        z-index: 3;
+    }
+    .plants{
+        height: 100%;
+        right: 0px;
+        z-index: 2;
+    }
+    .texto_resumo{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        background-color: #ffffff2f;
+        backdrop-filter: blur(5px);
+        border-top:2px solid rgba(255, 255, 255, 0.4);
+        border-left:2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 9px;
+        z-index: 1;
+        bottom: 50px;
+        right: 170px;
+        display: flex;
+        flex-direction: column;
+
+        .resumo_container{
+            width: 70%;
+            padding: 15px;
+
+            p{
+                color: #014612;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: .7px;
+                z-index: 5;
+            }
+        }
+
+    }
+}
+footer{
+    display: flex;
+    height: 30px;
+    background-color: #dedede;
+    width: 100vw;
+    position: sticky;
+    bottom: 0;
+    padding: 0 90px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    z-index: 10;
+
+    a{
+        text-decoration: none;
+        color: #015c18;
+        letter-spacing: 1px;
+    }
+}
+
+

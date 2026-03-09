@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dedede;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    background-color: #dedede;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo_container{
+    margin-left: 90px;
+    height: 100%;
+    img{
+        height: 100%;
+    }
+}
+
+nav .navbar{
+    height: 80%;
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #0fb12a;
+    padding: 8px 16px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    transition: transform .5s ease;
+    cursor: pointer;
+    font-weight: 200;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: #58f880;
+    color: #015c18;
+    font-weight: 400;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+main {
+    position: relative;
+    height: calc(100vh - 90px);
+    width: 100vw;
+    background-color: #015c18;
+}
+
+main .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/admin_bg.png);
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main .container{
+    height: 100%;
+    width: 100%;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .admin_sobre{
+    width: 50%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    img{
+        display: bloc;
+        height: 120px;
+        align-self: center;
+    }
+    .jargao{
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 500;
+        color: #58f880;
+        font-size: 20px;
+    }
+
+    .text_container{
+        padding: 10px;
+        border-radius: 9px;
+        background-color: #ffffff00;
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.189);
+        p{
+            letter-spacing: 1px;
+            line-height: 1.4rem;
+            font-weight: 200;
+            color: #fff;
+        }
+    }
+}
+.container .admin_login{  /*  glassmorphism */
+    width: 30%;
+    border-radius: 9px;
+    z-index: 3;
+    padding: 18px;
+    /*  glassmorphism */
+    background-color: #ffffff13;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.189);
+    backdrop-filter: blur(10px);
+}
+
+
+.login_header{
+    padding: 10px;
+    background-color: #dedede;
+    border-radius: 9px;
+    text-align: center;
+    p{
+        font-size: 17px;
+        font-weight: 300;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 26px;
+        color: #0fb12a;
+    }
+}
+
+.login_body{
+    margin: 20px 0;
+    padding: 0 5px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            width: 100%;
+            font-size: 14px;
+            padding: 12px 10px;
+            margin-bottom: 20px;
+            margin-top: 6px;
+            background-color: #dedede;
+            border: none;
+            outline: none;
+            border-radius: 9px;
+        }
+
+        button{
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.login_footer{
+    text-align: center;
+    a {
+        color: #0fb12a;
+    }
+}
+
+footer{
+    display: flex;
+    height: 30px;
+
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    padding: 0 90px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    background-color: #dedede   ;
+    
+
+    a{
+        text-decoration: none;
+        color: #015c18;
+        letter-spacing: 1px;
+    }
+}
